@@ -1,0 +1,47 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("KFX|Hub V1.2", "DarkTheme")
+
+--Credits
+local Tab = Window:NewTab("Credits")
+local Section = Tab:NewSection("UI By XHeptc")
+local Section = Tab:NewSection("Hub By Nope#3473")
+
+--Player
+local Tab = Window:NewTab("Player")
+local Section = Tab:NewSection("Character")
+Section:NewSlider("Player Speed", "Your sonic right?", 300, 16, function(s) -- 500 (MaxValue) | 0 (MinValue)
+	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+end)
+Section:NewSlider("Player JP", "Be like that Moon Cow", 250, 50, function(s) -- 500 (MaxValue) | 0 (MinValue)
+	game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
+end)
+
+--Games
+local Tab = Window:NewTab("Games")
+local Section = Tab:NewSection("Games")
+Section:NewButton("Prison Life", "Opens a Prison Life Script", function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/mHfK0Xk4", true))()
+end)
+Section:NewButton("Jailbreak", "Opens a Jailbreak Script", function()
+	loadstring(game:HttpGet('https://projectevo.xyz/script/loader.lua'))()
+end)
+Section:NewButton("YBA", "Opens a YBA Script", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/NukeVsCity/crackupdated2021/main/xenonus1"))()
+end)
+Section:NewButton("Mad City", "Opens a Mad City Script", function()
+	loadstring(game:HttpGet("https://jack1214060.xyz/jayhub",true))()
+end)
+Section:NewButton("Loomian Legacy", "Opens a Loomian Legacy Script", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Introvert1337/Releases/master/LoomianLegacyX.lua"))()
+end)
+local Section = Tab:NewSection("Soul Shatters")
+Section:NewButton("Last Breath Sans", "Open on Choosing Menu", function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/GiveUsername/souce2/main/source2'))()
+end)
+Section:NewButton("Gaster", "Open on Choosing Menu", function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/GiveUsername/source3/main/source3'))()
+end)
+
+--Cutomization
+local Tab = Window:NewTab("Customization")
+local Section = Tab:NewSection("Hub Customization Coming Soon!")
